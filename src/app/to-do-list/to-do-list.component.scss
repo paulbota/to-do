@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  justify-content: center;
+
+  mat-card {
+    min-width: 500px;
+    .add-new-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      mat-form-field {
+        width: 100%;
+      }
+
+      button {
+        margin-left: 10px;
+      }
+    }
+
+    mat-list {
+      mat-checkbox {
+        &.selected {
+          color: rgba(0,0,0,.54);
+          text-decoration: line-through;
+        }
+      }
+
+      button {
+        margin-left: auto;
+      }
+    }
+
+    .control-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      button + button {
+        margin-left: 10px;
+      }
+    }
+  }
+}
